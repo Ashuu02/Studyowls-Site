@@ -11,7 +11,7 @@ const JustReleased = () => {
               <p className=" font-extrabold text-xs text-gray-400 h-auto">
                 JUST RELEASED
               </p>
-              <h2 className="text-5xl pr-10 w-[90%] tracking-normal pb-2 mb-3 pt-2 mt-[12px] flex text-white sm:w-full font-inter font-black font-family:Inter text-left ">
+              <h2 className="text-5xl pr-10 w-[95%] tracking-normal pb-2 mb-3 pt-2 mt-[12px] flex text-white sm:w-full font-inter font-black font-family:Inter text-left ">
                 Prototyping Skill Test
               </h2>
 
@@ -20,7 +20,7 @@ const JustReleased = () => {
                 <p className="text-base max-w-[90%] text-gray-300 h-auto">
                   Test your understanding of the theory and best practices of UX
                   prototyping and see how you stack up against other designers
-                  worldwide.
+                  worldwide. kjfnebnfbno
                 </p>
 
               </div>
