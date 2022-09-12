@@ -10,7 +10,7 @@ const Assessments = () => {
   return (
     <div className="mt-10 w-full">
       <div className="">
-        <p className="text-left w-full font-extrabold text-sm text-gray-500 h-auto">
+        <p className="text-left w-full font-extrabold text-xs text-gray-500 h-auto">
           ASSESSMENTS (0/6)
         </p>
         <div className="grid mt-[12px] md:grid-cols-6 w-full ">

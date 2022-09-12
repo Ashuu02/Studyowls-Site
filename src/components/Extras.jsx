@@ -29,8 +29,8 @@ const Extras = () => {
               width="32"
               height="32"
             />
-            <div className="pl-5 w-full">
-              <h3 className="w-full text-[18px] font-inter font-extrabold">Achievements</h3>
+            <div className="pl-4 w-full items-center ">
+              <h3 className="w-full h-full items-center pt-1 text-base font-inter font-extrabold">Achievements</h3>
             </div>
           </div>
         </div>
@@ -40,8 +40,8 @@ const Extras = () => {
         <div className="bg-white mb-2 border-spacing-1 text-[20px] hover:shadow-lg p-[24px] hover:shadow-gray-300 w-full max-w-[100%] rounded-2xl hover:scale-[101%] ease-in duration-100">
           <div className="flex mt-0">
             <IoRocketSharp className="font-bold p-0 m-0 h-[32px] w-[32px]" />
-            <div className="pl-5 w-full">
-              <h3 className="w-full text-[18px] font-inter font-extrabold">
+            <div className="pl-4 w-full">
+              <h3 className="w-full text-base font-inter font-extrabold">
                 Release Roadmap
               </h3>
             </div>
@@ -53,8 +53,8 @@ const Extras = () => {
         <div className="bg-white mb-2 border-spacing-1 text-[20px] hover:shadow-lg p-[24px] hover:shadow-gray-300 w-full max-w-[100%] rounded-2xl hover:scale-[101%] ease-in duration-100">
           <div className="flex mt-0">
             <BsSlack className="font-bold p-0 m-0 h-[32px] w-[32px]" />
-            <div className="pl-5 w-full">
-              <h3 className="w-full text-[18px] font-inter font-extrabold">
+            <div className="pl-4 w-full">
+              <h3 className="w-full text-base font-inter font-extrabold">
                 Slack Community
               </h3>
             </div>
@@ -64,8 +64,8 @@ const Extras = () => {
           <div className="flex mt-0">
             <img src={stack2} alt="/UxcelKit" height={"32px"} width="32px" />
 
-            <div className="pl-5 w-full">
-              <h3 className=" font-inter text-[18px] font-extrabold">Uxcel UI Kit</h3>
+            <div className="pl-4 w-full">
+              <h3 className=" font-inter text-base font-extrabold">Uxcel UI Kit</h3>
             </div>
             <div className=" items-start  text-left place-items-start w-full">
               <button className=" rounded-lg  font-inter bg-[#f3f3f3] p-1">
@@ -85,11 +85,11 @@ const Extras = () => {
               src={icons}
               alt="/iconSet"
               className=" rounded-lg"
-              width="36"
-              height="36"
+              width="32"
+              height="32"
             />
-            <div className="pl-5 w-full">
-              <h3 className="w-full text-[18px] font-inter font-extrabold">Uxcel Icon Set</h3>
+            <div className="pl-4 w-full">
+              <h3 className="w-full text-base font-inter font-extrabold">Uxcel Icon Set</h3>
             </div>
           </div>
         </div>
