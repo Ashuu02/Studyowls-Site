@@ -29,7 +29,7 @@ const Main = () => {
             <div className="bg-[#f3f3f3]">
               <h1 className="text-3xl font-extrabold font-inter">Home</h1>
             </div>
-            <div className="relative ml-[685px] max-w-[50%]  h-[44px] w-64 flex rounded-full sm:mr-0 mr-4 bg-[#e9e9ea] justify-between pl-1 pb-1  focus-within:border-blue-500 focus-within:ring-blue-200 focus-within:ring-4 items-end justify-top text-right place-items-end ">
+            <div className="relative ml-[685px] max-w-[50%] pt-1 h-[44px] w-64 flex rounded-full sm:mr-0 mr-4 bg-[#e9e9ea] justify-between pl-1 pb-1 hover:border-black hover:ring-black hover:ring-2 focus-within:border-black ease-in-out duration-200 focus-within:ring-black focus-within:ring-2 items-end justify-top text-right place-items-end ">
               <BiSearch className="h-full text-gray-500 mt-2 mb-0 top-[-10%] ml-2 text-2xl" />
 
               <input
