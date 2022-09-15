@@ -5,6 +5,7 @@ module.exports = {
     extend: {
       fontFamily: {
         inter: ["Inter", "sans-serif"],
+        sora: ['Sora', "sans-serif"],
       },
       fontWeight: {
         hairline: 100,

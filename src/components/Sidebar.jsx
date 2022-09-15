@@ -1,8 +1,9 @@
 import React from "react";
+import { Link, NavLink } from "react-router-dom";
 
 const Sidebar = () => {
   return (
-    <div className="text-white  ">
+    <div className="text-white bg-[#21222A] ">
       <div className="h-screen  px-[24px] pb-[16px] bg-[#21222A]">
         {/* <div className=" "> */}
         <div className=" h-screen relative top-0 w-[136px] bg-[#21222A] hidden md:flex">
@@ -13,16 +14,14 @@ const Sidebar = () => {
               </h1>
             </div>
             <ul className=" w-[136px]  text-[14px] font-bold text-gray-400 mt-[60px] items-left text-left ">
-              <a href="/" className="">
+              <Link to="/" className="">
                 <li className="py-3  pl-1 hover:text-[#F8DB46] ">Home</li>
-              </a>
-              <li className="py-3 pl-1 hover:text-[#F8DB46] ">
-                <a href="/#about">
-                  <div>
-                    <span>Courses</span>
-                  </div>
-                </a>
-              </li>
+              </Link>
+
+              <Link to="/CourseDetails">
+                <li className="py-3  pl-1 hover:text-[#F8DB46] ">Courses</li>
+              </Link>
+
               <a href="/#about">
                 <li className="py-3 pl-1 hover:text-[#F8DB46] ">
                   Learning Paths
@@ -32,14 +31,10 @@ const Sidebar = () => {
                 <li className="py-3 pl-1 hover:text-[#F8DB46] ">Job Board</li>
               </a>
               <a href="/#skillTest">
-                <li className="py-3 pl-1 hover:text-[#F8DB46] ">
-                  Skill Tests
-                </li>
+                <li className="py-3 pl-1 hover:text-[#F8DB46] ">Skill Tests</li>
               </a>
               <a href="/#challenges">
-                <li className="py-3 pl-1 hover:text-[#F8DB46] ">
-                  Challenges
-                </li>
+                <li className="py-3 pl-1 hover:text-[#F8DB46] ">Challenges</li>
               </a>
 
               <a href="/#arcade">
