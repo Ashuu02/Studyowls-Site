@@ -11,6 +11,7 @@ import { BiHeart } from "react-icons/bi";
 import CourseDescription from "./CourseDescription";
 import LearnerReviews from "./LearnerReviews";
 import RelatedCourses from "./RelatedCourses";
+import Level2 from "./Level2";
 
 const CourseLevels = () => {
   return (
@@ -160,6 +161,7 @@ const CourseLevels = () => {
                 </div>
               </div>
             </div>
+            <Level2/>
             <RelatedCourses />
           </div>
 
