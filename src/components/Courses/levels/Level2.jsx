@@ -1,9 +1,9 @@
 import React from 'react'
-import img1 from "../../assets/level2/colorTheory.svg";
-import img2 from "../../assets/level2/colorProperties.svg";
-import img3 from "../../assets/level2/imageTerminology.svg";
-import img4 from "../../assets/level2/imageProperties.svg";
-import img5 from "../../assets/level2/level2Test.svg";
+import img1 from "../../../assets/level2/colorTheory.svg";
+import img2 from "../../../assets/level2/colorProperties.svg";
+import img3 from "../../../assets/level2/imageTerminology.svg";
+import img4 from "../../../assets/level2/imageProperties.svg";
+import img5 from "../../../assets/level2/level2Test.svg";
 import { BsClock, BsFiles } from 'react-icons/bs';
 import { HiCheckCircle } from 'react-icons/hi';
 import { BiHeart } from 'react-icons/bi';
@@ -152,6 +152,7 @@ const Level2 = () => {
                   {/* </div> */}
                 </div>
               </div>
+              
             </div>
   )
 }
