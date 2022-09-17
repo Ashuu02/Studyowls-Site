@@ -13,6 +13,27 @@ import LearnerReviews from "./LearnerReviews";
 import RelatedCourses from "./RelatedCourses";
 import Level2 from "./levels/Level2";
 import Level3 from "./levels/Level3";
+import Level4 from "./levels/Level4";
+import Level5 from "./levels/Level5";
+import lastSublevel from "./levels/LastSublevel";
+
+import l4_1 from "../../assets/level4/1.svg";
+import l4_2 from "../../assets/level4/2.svg";
+import l4_3 from "../../assets/level4/3.svg";
+import l4_4 from "../../assets/level4/4.svg";
+import l4_test from "../../assets/level4/test.svg";
+
+import l5_1 from "../../assets/level5/1.svg";
+import l5_2 from "../../assets/level5/2.svg";
+import l5_3 from "../../assets/level5/3.svg";
+import l5_test from "../../assets/level5/test.svg";
+
+import l6_1 from "../../assets/level6/1.svg";
+import l6_2 from "../../assets/level6/2.svg";
+import l6_3 from "../../assets/level6/3.svg";
+import l6_4 from "../../assets/level6/4.svg";
+import l6_5 from "../../assets/level6/5.svg";
+import l6_test from "../../assets/level5/test.svg";
 
 const CourseLevels = () => {
   return (
@@ -144,9 +165,7 @@ const CourseLevels = () => {
                 />
                 {/* </div> */}
                 <div className="ml-4 mb-4 w-full">
-                  <h2 className=" text-base font-bold  ">
-                    Level Test 1
-                  </h2>
+                  <h2 className=" text-base font-bold  ">Level Test 1</h2>
                   <div className=" pt-[12px] align-text-bottom flex text-gray-400 ">
                     <BiHeart className="text-lg mr-[6px] font-bold text-gray-600" />
                     <p className="text-sm mr-[10px]">3 Lives</p>
@@ -162,8 +181,131 @@ const CourseLevels = () => {
                 </div>
               </div>
             </div>
-            <Level2/>
-            <Level3/>
+            <Level2 />
+            <Level3 />
+            <div className=" mt-[44px]  ml-[56px] ">
+              <p className=" uppercase text-xs font-extrabold tracking-wider text-[#05060f99]">
+                LEVEL 4
+              </p>
+              <h2 className="text-[20px] font-bold mt-[12px]">
+                Elements of Design I
+              </h2>
+              <Level4
+                title={"Design {rinciples I: Theory"}
+                img={l4_1}
+                exercises={"12"}
+                bgcolor={"bg-[#ffffff]"}
+              />
+              <Level4
+                title={"Design Principles II: Usage"}
+                img={l4_2}
+                exercises={"12"}
+              />
+              <Level4
+                title={"Atomic Design by Brad Frost"}
+                img={l4_3}
+                exercises={"12"}
+              />
+              <Level4
+                title={"10 Usability Heuristics by Jacob Nielsen"}
+                img={l4_4}
+                exercises={"12"}
+              />
+              <div className="mt-[24px] cursor-pointer p-6 rounded-2xl w-[503.33px] h-[112px] flex border-[1.5px] ">
+                {/* <div className=""> */}
+                <img src={l4_test} alt="/level1Test" width={"64"} height="64" />
+                {/* </div> */}
+                <div className="ml-4 mb-4 w-full">
+                  <h2 className=" text-base font-bold  ">Level Test 4</h2>
+                  <div className=" pt-[12px] align-text-bottom flex text-gray-400 ">
+                    <BiHeart className="text-lg mr-[6px] font-bold text-gray-600" />
+                    <p className="text-sm mr-[10px]">3 Lives</p>
+                    <BsFiles className=" mr-[6px] font-bold text-gray-600 " />
+                    <p className="text-sm ">15 exercises</p>
+                  </div>
+                </div>
+
+                <div className=" ml-5 pt-[3%] ">
+                  {/* <div className=" items-center text-center justify-between rounded-full"> */}
+                  <HiCheckCircle className="sm:w-[26px] text-gray-300 sm:h-[26px]" />
+                  {/* </div> */}
+                </div>
+              </div>
+            </div>
+
+            <div className=" mt-[44px]  ml-[56px] ">
+              <p className=" uppercase text-xs font-extrabold tracking-wider text-[#05060f99]">
+                LEVEL 5
+              </p>
+              <h2 className="text-[20px] font-bold mt-[12px]">
+                Elements of Design I
+              </h2>
+
+              <Level5 title={"Design Layouts"} img={l5_1} exercises={"12"} />
+              <Level5 title={"Design Grids"} img={l5_2} exercises={"12"} />
+              <Level5 title={"Devices {"&"} Screen Sizes"} img={l5_3} exercises={"12"} />
+              <div className="mt-[24px] cursor-pointer p-6 rounded-2xl w-[503.33px] h-[112px] flex border-[1.5px] ">
+                {/* <div className=""> */}
+                <img src={l5_test} alt="/level5Test" width={"64"} height="64" />
+                {/* </div> */}
+                <div className="ml-4 mb-4 w-full">
+                  <h2 className=" text-base font-bold  ">Level Test 5</h2>
+                  <div className=" pt-[12px] align-text-bottom flex text-gray-400 ">
+                    <BiHeart className="text-lg mr-[6px] font-bold text-gray-600" />
+                    <p className="text-sm mr-[10px]">3 Lives</p>
+                    <BsFiles className=" mr-[6px] font-bold text-gray-600 " />
+                    <p className="text-sm ">15 exercises</p>
+                  </div>
+                </div>
+
+                <div className=" ml-5 pt-[3%] ">
+                  {/* <div className=" items-center text-center justify-between rounded-full"> */}
+                  <HiCheckCircle className="sm:w-[26px] text-gray-300 sm:h-[26px]" />
+                  {/* </div> */}
+                </div>
+              </div>
+  
+            </div>
+
+
+
+
+            <div className=" mt-[44px]  ml-[56px] ">
+              <p className=" uppercase text-xs font-extrabold tracking-wider text-[#05060f99]">
+                LEVEL 6
+              </p>
+              <h2 className="text-[20px] font-bold mt-[12px]">
+                Working in UI/UX Design 
+              </h2>
+
+              <Level5 title={"UI Design Deliverables"} img={l6_1} exercises={"12"} />
+              <Level5 title={"UX Design Deliverables"} img={l6_2} exercises={"12"} />
+              <Level5 title={"Intro to Microcopy"} img={l6_3} exercises={"12"} />
+              <Level5 title={"Design Processes {"&"} Research Methods"} img={l6_4} exercises={"12"} />
+              <Level5 title={"Information Architecture"} img={l6_5} exercises={"12"} />
+              <div className="mt-[24px] cursor-pointer p-6 rounded-2xl w-[503.33px] h-[112px] flex border-[1.5px] ">
+                {/* <div className=""> */}
+                <img src={l5_test} alt="/level5Test" width={"64"} height="64" />
+                {/* </div> */}
+                <div className="ml-4 mb-4 w-full">
+                  <h2 className=" text-base font-bold  ">Level Test 6</h2>
+                  <div className=" pt-[12px] align-text-bottom flex text-gray-400 ">
+                    <BiHeart className="text-lg mr-[6px] font-bold text-gray-600" />
+                    <p className="text-sm mr-[10px]">3 Lives</p>
+                    <BsFiles className=" mr-[6px] font-bold text-gray-600 " />
+                    <p className="text-sm ">15 exercises</p>
+                  </div>
+                </div>
+
+                <div className=" ml-5 pt-[3%] ">
+                  {/* <div className=" items-center text-center justify-between rounded-full"> */}
+                  <HiCheckCircle className="sm:w-[26px] text-gray-300 sm:h-[26px]" />
+                  {/* </div> */}
+                </div>
+              </div>
+  
+            </div>
+
             <RelatedCourses />
           </div>
 
