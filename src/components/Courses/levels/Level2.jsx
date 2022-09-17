@@ -5,7 +5,7 @@ import img3 from "../../../assets/level2/imageTerminology.svg";
 import img4 from "../../../assets/level2/imageProperties.svg";
 import img5 from "../../../assets/level2/level2Test.svg";
 import { BsClock, BsFiles } from "react-icons/bs";
-import { HiCheckCircle } from "react-icons/hi";
+import { HiCheckCircle, HiOutlineBookOpen } from "react-icons/hi";
 import { BiHeart } from "react-icons/bi";
 import { BsBook } from "react-icons/bs";
 
@@ -33,11 +33,13 @@ const Level2 = () => {
             <p className="text-sm mt-[12px]">12 exercises</p>
           </div>
         </div>
-
-        <div className=" ml-5 pt-[3%] ">
-          <div className=" items-center text-center justify-between rounded-full sm:w-[22px] sm:h-[22px] bg-[#33691e] ">
-            <p className="text-white pt-1 text-xs mt-1 text-extrabold">K</p>
+        <div className=" opacity-0 absolute hover:opacity-100 shadow-lg text-right hover:shadow-gray-200 justify-right items-end pt-[7.5%] pl-[90%] duration-300 inset-0 z-10 font-bold  ">
+          <div className="w-[45px] mt-[-10%] ml-[-30%] h-[45px] p-1 bg-white rounded-full hover:bg-gray-200 text-center justify-between items-center border-[0.1px] border-gray-200 ">
+            <HiOutlineBookOpen className="sm:w-[26px] ml-[15%] mt-1 items-end text-right text-gray-800 sm:h-[26px]" />
           </div>
+        </div>
+        <div className=" ml-5 pt-[3%] ">
+          <HiCheckCircle className="sm:w-[26px] text-gray-300 sm:h-[26px]" />
         </div>
       </div>
 
@@ -58,10 +60,13 @@ const Level2 = () => {
           </div>
         </div>
 
+        <div className=" opacity-0 absolute hover:opacity-100 shadow-lg text-right hover:shadow-gray-200 justify-right items-end pt-[7.5%] pl-[90%] duration-300 inset-0 z-10 font-bold  ">
+          <div className="w-[45px] mt-[-10%] ml-[-30%] h-[45px] p-1 bg-white rounded-full hover:bg-gray-200 text-center justify-between items-center border-[0.1px] border-gray-200 ">
+            <HiOutlineBookOpen className="sm:w-[26px] ml-[15%] mt-1 items-end text-right text-gray-800 sm:h-[26px]" />
+          </div>
+        </div>
         <div className=" ml-5 pt-[3%] ">
-          {/* <div className=" items-center text-center justify-between rounded-full"> */}
           <HiCheckCircle className="sm:w-[26px] text-gray-300 sm:h-[26px]" />
-          {/* </div> */}
         </div>
       </div>
 
@@ -82,10 +87,13 @@ const Level2 = () => {
           </div>
         </div>
 
+        <div className=" opacity-0 absolute hover:opacity-100 shadow-lg text-right hover:shadow-gray-200 justify-right items-end pt-[7.5%] pl-[90%] duration-300 inset-0 z-10 font-bold  ">
+          <div className="w-[45px] mt-[-10%] ml-[-30%] h-[45px] p-1 bg-white rounded-full hover:bg-gray-200 text-center justify-between items-center border-[0.1px] border-gray-200 ">
+            <HiOutlineBookOpen className="sm:w-[26px] ml-[15%] mt-1 items-end text-right text-gray-800 sm:h-[26px]" />
+          </div>
+        </div>
         <div className=" ml-5 pt-[3%] ">
-          {/* <div className=" items-center text-center justify-between rounded-full"> */}
           <HiCheckCircle className="sm:w-[26px] text-gray-300 sm:h-[26px]" />
-          {/* </div> */}
         </div>
       </div>
 
@@ -106,10 +114,13 @@ const Level2 = () => {
           </div>
         </div>
 
+        <div className=" opacity-0 absolute hover:opacity-100 shadow-lg text-right hover:shadow-gray-200 justify-right items-end pt-[7.5%] pl-[90%] duration-300 inset-0 z-10 font-bold  ">
+          <div className="w-[45px] mt-[-10%] ml-[-30%] h-[45px] p-1 bg-white rounded-full hover:bg-gray-200 text-center justify-between items-center border-[0.1px] border-gray-200 ">
+            <HiOutlineBookOpen className="sm:w-[26px] ml-[15%] mt-1 items-end text-right text-gray-800 sm:h-[26px]" />
+          </div>
+        </div>
         <div className=" ml-5 pt-[3%] ">
-          {/* <div className=" items-center text-center justify-between rounded-full"> */}
           <HiCheckCircle className="sm:w-[26px] text-gray-300 sm:h-[26px]" />
-          {/* </div> */}
         </div>
       </div>
 
@@ -127,11 +138,13 @@ const Level2 = () => {
             <p className="text-sm ">15 exercises</p>
           </div>
         </div>
-
+        <div className=" opacity-0 absolute hover:opacity-100 shadow-lg text-right hover:shadow-gray-200 justify-right items-end pt-[7.5%] pl-[90%] duration-300 inset-0 z-10 font-bold  ">
+          <div className="w-[45px] mt-[-10%] ml-[-30%] h-[45px] p-1 bg-white rounded-full hover:bg-gray-200 text-center justify-between items-center border-[0.1px] border-gray-200 ">
+            <HiOutlineBookOpen className="sm:w-[26px] ml-[15%] mt-1 items-end text-right text-gray-800 sm:h-[26px]" />
+          </div>
+        </div>
         <div className=" ml-5 pt-[3%] ">
-          {/* <div className=" items-center text-center justify-between rounded-full"> */}
           <HiCheckCircle className="sm:w-[26px] text-gray-300 sm:h-[26px]" />
-          {/* </div> */}
         </div>
       </div>
     </div>

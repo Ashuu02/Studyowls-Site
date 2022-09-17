@@ -1,8 +1,8 @@
 import React from "react";
 import UX from "../../assets/UX.svg";
-import { BsClock } from "react-icons/bs";
+import { BsClock, BsPlayFill } from "react-icons/bs";
 import { BsFiles } from "react-icons/bs";
-import { HiCheckCircle } from "react-icons/hi";
+import { HiCheckCircle, HiOutlineBookOpen } from "react-icons/hi";
 import puzzle from "../../assets/puzzle.svg";
 import UI_Elements from "../../assets/UI_elements.svg";
 import commonDesignerRoles from "../../assets/commonDesignerRoles.svg";
@@ -64,7 +64,16 @@ const CourseLevels = () => {
                     <p className="text-sm ">7 exercises</p>
                   </div>
                 </div>
-
+                <div className=" opacity-0 absolute hover:opacity-100 shadow-lg text-right hover:shadow-gray-200 justify-right items-end pt-[6%] pl-[78%] duration-300 inset-0 z-10 font-bold  ">
+                  <div className="flex ">
+                    <div className=" h-[45px] p-1 w-[45px] bg-white rounded-full hover:bg-gray-200 text-center justify-between items-center border-[0.1px] border-gray-200 ">
+                      <HiOutlineBookOpen className="sm:w-[26px] ml-[15%] mt-1 items-end text-right text-gray-800 sm:h-[26px]" />
+                    </div>
+                    <div className=" h-[45px] bg-[#5627FF] ml-2 p-2 w-[45px] rounded-full hover:bg-black text-center justify-between items-center border-[0.1px] border-gray-200 ">
+                      <BsPlayFill className="text-3xl text-white" />
+                    </div>
+                  </div>
+                </div>
                 <div className=" ml-5 pt-[3%] ">
                   <div className=" items-center text-center justify-between rounded-full sm:w-[22px] sm:h-[22px] bg-[#33691e] ">
                     <p className="text-white pt-1 text-xs mt-1 text-extrabold">
@@ -91,10 +100,18 @@ const CourseLevels = () => {
                   </div>
                 </div>
 
+                <div className=" opacity-0 absolute hover:opacity-100 shadow-lg text-right hover:shadow-gray-200 justify-right items-end pt-[6%] pl-[78%] duration-300 inset-0 z-10 font-bold  ">
+                  <div className="flex ">
+                    <div className=" h-[45px] p-1 w-[45px] bg-white rounded-full hover:bg-gray-200 text-center justify-between items-center border-[0.1px] border-gray-200 ">
+                      <HiOutlineBookOpen className="sm:w-[26px] ml-[15%] mt-1 items-end text-right text-gray-800 sm:h-[26px]" />
+                    </div>
+                    <div className=" h-[45px] bg-[#5627FF] ml-2 p-2 w-[45px] rounded-full hover:bg-black text-center justify-between items-center border-[0.1px] border-gray-200 ">
+                      <BsPlayFill className="text-3xl text-white" />
+                    </div>
+                  </div>
+                </div>
                 <div className=" ml-5 pt-[3%] ">
-                  {/* <div className=" items-center text-center justify-between rounded-full"> */}
                   <HiCheckCircle className="sm:w-[26px] text-gray-300 sm:h-[26px]" />
-                  {/* </div> */}
                 </div>
               </div>
 
@@ -117,7 +134,16 @@ const CourseLevels = () => {
                     <p className="text-sm ">10 exercises</p>
                   </div>
                 </div>
-
+                <div className=" opacity-0 absolute hover:opacity-100 shadow-lg text-right hover:shadow-gray-200 justify-right items-end pt-[6%] pl-[78%] duration-300 inset-0 z-10 font-bold  ">
+                  <div className="flex ">
+                    <div className=" h-[45px] p-1 w-[45px] bg-white rounded-full hover:bg-gray-200 text-center justify-between items-center border-[0.1px] border-gray-200 ">
+                      <HiOutlineBookOpen className="sm:w-[26px] ml-[15%] mt-1 items-end text-right text-gray-800 sm:h-[26px]" />
+                    </div>
+                    <div className=" h-[45px] bg-[#5627FF] ml-2 p-2 w-[45px] rounded-full hover:bg-black text-center justify-between items-center border-[0.1px] border-gray-200 ">
+                      <BsPlayFill className="text-3xl text-white" />
+                    </div>
+                  </div>
+                </div>
                 <div className=" ml-5 pt-[3%] ">
                   {/* <div className=" items-center text-center justify-between rounded-full"> */}
                   <HiCheckCircle className="sm:w-[26px] text-gray-300 sm:h-[26px]" />
@@ -146,7 +172,16 @@ const CourseLevels = () => {
                     <p className="text-sm ">10 exercises</p>
                   </div>
                 </div>
-
+                <div className=" opacity-0 absolute hover:opacity-100 shadow-lg text-right hover:shadow-gray-200 justify-right items-end pt-[6%] pl-[78%] duration-300 inset-0 z-10 font-bold  ">
+                  <div className="flex ">
+                    <div className=" h-[45px] p-1 w-[45px] bg-white rounded-full hover:bg-gray-200 text-center justify-between items-center border-[0.1px] border-gray-200 ">
+                      <HiOutlineBookOpen className="sm:w-[26px] ml-[15%] mt-1 items-end text-right text-gray-800 sm:h-[26px]" />
+                    </div>
+                    <div className=" h-[45px] bg-[#5627FF] ml-2 p-2 w-[45px] rounded-full hover:bg-black text-center justify-between items-center border-[0.1px] border-gray-200 ">
+                      <BsPlayFill className="text-3xl text-white" />
+                    </div>
+                  </div>
+                </div>
                 <div className=" ml-5 pt-[3%] ">
                   {/* <div className=" items-center text-center justify-between rounded-full"> */}
                   <HiCheckCircle className="sm:w-[26px] text-gray-300 sm:h-[26px]" />
@@ -173,7 +208,17 @@ const CourseLevels = () => {
                     <p className="text-sm ">15 exercises</p>
                   </div>
                 </div>
-
+                <div className=" opacity-0 absolute hover:opacity-100 shadow-lg text-right hover:shadow-gray-200 justify-right items-end pt-[6%] pl-[78%] duration-300 inset-0 z-10 font-bold  ">
+                  <div className="flex ">
+                    <div className=" h-[45px] p-1 w-[45px] bg-white rounded-full hover:bg-gray-200 text-center justify-between items-center border-[0.1px] border-gray-200 ">
+                      <HiOutlineBookOpen className="sm:w-[26px] ml-[15%] mt-1 items-end text-right text-gray-800 sm:h-[26px]" />
+                    </div>
+                    <div className=" h-[45px] bg-[#5627FF] ml-2 p-2 w-[45px] rounded-full hover:bg-black text-center justify-between items-center border-[0.1px] border-gray-200 ">
+                      <BsPlayFill className="text-3xl text-white" />
+                    </div>
+                  </div>
+                </div>
+                
                 <div className=" ml-5 pt-[3%] ">
                   {/* <div className=" items-center text-center justify-between rounded-full"> */}
                   <HiCheckCircle className="sm:w-[26px] text-gray-300 sm:h-[26px]" />
@@ -188,10 +233,10 @@ const CourseLevels = () => {
                 LEVEL 4
               </p>
               <h2 className="text-[20px] font-bold mt-[12px]">
-                Elements of Design I
+                Design Principles {"&"} Practices
               </h2>
               <Level4
-                title={"Design {rinciples I: Theory"}
+                title={"Design Principles I: Theory"}
                 img={l4_1}
                 exercises={"12"}
                 bgcolor={"bg-[#ffffff]"}
@@ -243,7 +288,11 @@ const CourseLevels = () => {
 
               <Level5 title={"Design Layouts"} img={l5_1} exercises={"12"} />
               <Level5 title={"Design Grids"} img={l5_2} exercises={"12"} />
-              <Level5 title={"Devices {"&"} Screen Sizes"} img={l5_3} exercises={"12"} />
+              <Level5
+                title={"Devices & Screen Sizes"}
+                img={l5_3}
+                exercises={"12"}
+              />
               <div className="mt-[24px] cursor-pointer p-6 rounded-2xl w-[503.33px] h-[112px] flex border-[1.5px] ">
                 {/* <div className=""> */}
                 <img src={l5_test} alt="/level5Test" width={"64"} height="64" />
@@ -264,25 +313,41 @@ const CourseLevels = () => {
                   {/* </div> */}
                 </div>
               </div>
-  
             </div>
-
-
-
 
             <div className=" mt-[44px]  ml-[56px] ">
               <p className=" uppercase text-xs font-extrabold tracking-wider text-[#05060f99]">
                 LEVEL 6
               </p>
               <h2 className="text-[20px] font-bold mt-[12px]">
-                Working in UI/UX Design 
+                Working in UI/UX Design
               </h2>
 
-              <Level5 title={"UI Design Deliverables"} img={l6_1} exercises={"12"} />
-              <Level5 title={"UX Design Deliverables"} img={l6_2} exercises={"12"} />
-              <Level5 title={"Intro to Microcopy"} img={l6_3} exercises={"12"} />
-              <Level5 title={"Design Processes {"&"} Research Methods"} img={l6_4} exercises={"12"} />
-              <Level5 title={"Information Architecture"} img={l6_5} exercises={"12"} />
+              <Level5
+                title={"UI Design Deliverables"}
+                img={l6_1}
+                exercises={"12"}
+              />
+              <Level5
+                title={"UX Design Deliverables"}
+                img={l6_2}
+                exercises={"12"}
+              />
+              <Level5
+                title={"Intro to Microcopy"}
+                img={l6_3}
+                exercises={"12"}
+              />
+              <Level5
+                title={"Design Processes {" & "} Research Methods"}
+                img={l6_4}
+                exercises={"12"}
+              />
+              <Level5
+                title={"Information Architecture"}
+                img={l6_5}
+                exercises={"12"}
+              />
               <div className="mt-[24px] cursor-pointer p-6 rounded-2xl w-[503.33px] h-[112px] flex border-[1.5px] ">
                 {/* <div className=""> */}
                 <img src={l5_test} alt="/level5Test" width={"64"} height="64" />
@@ -303,7 +368,6 @@ const CourseLevels = () => {
                   {/* </div> */}
                 </div>
               </div>
-  
             </div>
 
             <RelatedCourses />

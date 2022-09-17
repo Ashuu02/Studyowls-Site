@@ -1,6 +1,6 @@
 import React from "react";
 import { BsClock, BsFiles } from "react-icons/bs";
-import { HiCheckCircle } from "react-icons/hi";
+import { HiCheckCircle, HiOutlineBookOpen } from "react-icons/hi";
 import { BiHeart } from "react-icons/bi";
 
 const Level4 = ({title,img,exercises}) => {
@@ -20,7 +20,11 @@ const Level4 = ({title,img,exercises}) => {
             <p className="text-sm mt-[12px]">{exercises}</p>
           </div>
         </div>
-
+        <div className=" opacity-0 absolute hover:opacity-100 shadow-lg text-right hover:shadow-gray-200 justify-right items-end pt-[7.5%] pl-[90%] duration-300 inset-0 z-10 font-bold  ">
+          <div className="w-[45px] mt-[-10%] ml-[-30%] h-[45px] p-1 bg-white rounded-full hover:bg-gray-200 text-center justify-between items-center border-[0.1px] border-gray-200 ">
+            <HiOutlineBookOpen className="sm:w-[26px] ml-[15%] mt-1 items-end text-right text-gray-800 sm:h-[26px]" />
+          </div>
+        </div>
         <div className=" ml-5 pt-[3%] ">
           <HiCheckCircle className="sm:w-[26px] text-gray-300 sm:h-[26px]" />
         </div>

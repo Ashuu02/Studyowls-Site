@@ -46,9 +46,9 @@ const CourseDiv = () => {
                 </div>
               </div>
 
-              <button className=" mt-6 h-[44px] px-[18px] bg-[#5627FF] py-2 rounded-xl">
+              <button className=" mt-6 h-[44px] px-[18px] hover:bg-black ease-in-out duration-200 bg-[#5627FF] py-2 rounded-xl">
                 <div className="font-extrabold text-white flex">
-                  <BsPlayFill className=" h-[28px] w-[28px] items-center text-center justify-center " />
+                  <BsPlayFill className=" h-[28px] w-[28px] items-center text-center justify-center font-extrabold " />
                   <p className="mt-[2px]">{"  "}Start Learning for free</p>
                 </div>
               </button>
