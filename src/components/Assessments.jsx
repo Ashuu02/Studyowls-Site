@@ -13,6 +13,7 @@ const Assessments = () => {
         <p className="text-left w-full font-extrabold text-xs text-gray-500 h-auto">
           ASSESSMENTS (0/6)
         </p>
+  
         <div className="grid mt-[12px] md:grid-cols-6 w-full ">
           <img src={ass1} alt="ass1" className="hover:scale-[110%] ease-in duration-75" width={43} height={43} />
           <img src={ass2} alt="ass2" className="hover:scale-[110%] ease-in duration-75" width={43} height={43} />
