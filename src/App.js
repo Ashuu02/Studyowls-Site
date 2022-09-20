@@ -12,7 +12,6 @@ function App() {
     <div className="flex bg-[#21222A]">
      <Sidebar />
    
-
       <Routes>
         {/* <Switch> */}
         <Route path="/" element={<Main />} />
