@@ -10,11 +10,20 @@ import { FiClock } from "react-icons/fi";
 const CourseDiv = () => {
   return (
     <>
-      <div className="w-full mt-[80px] p-[64px] ">
+      <div className=" mt-[80px] px-[40px] py-[64px] tablet:p-[64px] ">
         <div className="text-black ">
           <div className="bg-white md:grid grid-flow-col-dense w-full max-w-[100%]">
             {/* <div className="relative flex bg-white h-auto w-full rounded-xl p-4 group"> */}
             {/* <div className=""></div> */}
+            
+            <div className=" laptop:hidden block mb-5 sm:w-[80px] sm:h-[80px] tablet:h-[144px] tablet:w-[144px] rounded-lg tablet:ml-[64px]">
+              <img
+                src={stackImg}
+                alt="/stackImg"
+                className=""
+              />
+            </div>
+            
             <div>
               {/* <div className="rounded-lg sm:mt-[18px] mt-[14px]"> */}
               <p className=" uppercase text-[14px] font-bold tracking-wider text-[#05060f99] mb-3 ">
@@ -53,7 +62,7 @@ const CourseDiv = () => {
                 </div>
               </button>
             </div>
-            <div className="rounded-lg ml-[64px]">
+            <div className=" hidden laptop:block rounded-lg ml-[64px]">
               <img
                 src={stackImg}
                 alt="/stackImg"

@@ -29,7 +29,7 @@ const Preferences = () => {
             </button>
           </div>
         </div>
-        <div className="items-center place-items-center justify-between p-3 h-full w-full  text-center ">
+        <div className="items-center hidden tablet:block place-items-center justify-between p-3 h-full w-full  text-center ">
           <img
             src={preferences}
             alt="/preferences"

@@ -23,7 +23,7 @@ import Assessments from "./Assessments";
 const Main = () => {
   return (
     <>
-      <div className="px-[32px] bg-[#F3F3F3] overflow-y-scroll font-inter tablet:rounded-tl-3xl rounded-none tablet:rounded-bl-3xl h-screen w-full">
+      <div className="px-[32px] bg-[#F3F3F3] overflow-scroll font-inter tablet:rounded-tl-3xl rounded-none tablet:rounded-bl-3xl h-screen w-full">
         <div className="fixed w-[100%] mb-4 z-[100]  h-20  items-center bg-[#f3f3f3] ">
           <div className="flex z-[100px] bg-[#f3f3f3] w-full mt-5 ">
             <div className="bg-[#f3f3f3]">
