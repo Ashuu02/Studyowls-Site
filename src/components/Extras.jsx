@@ -23,7 +23,7 @@ const Extras = () => {
         <div className="bg-white mb-2 border-spacing-1 text-[20px] hover:shadow-lg p-[24px] hover:shadow-gray-300 w-full max-w-[100%] rounded-2xl hover:scale-[101%] ease-in duration-100">
           <div className="flex mt-0">
             <img
-              src={achievement}
+              src={achievement }
               alt="/stackImg"
               className=" rounded-lg"
               width="32"
