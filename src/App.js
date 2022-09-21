@@ -9,6 +9,8 @@ import CourseDetails from "./components/Courses/CourseDetails";
 function App() {
   return (
 
+    
+    
     <div className="flex bg-[#21222A]">
      <Sidebar />
    
