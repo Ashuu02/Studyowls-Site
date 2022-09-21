@@ -41,10 +41,10 @@ const Main = () => {
           </div>
         </div>
 
-        <div className="flex-row px-[20px] sm:p-0 w-full sm:flex">
+        <div className="flex-row p-0 sm:flex">
           {/* col 1 */}
 
-          <div className="mt-[80px]   tablet:pr-[32px] pt-[16px]">
+          <div className="mt-[80px]  tablet:pr-[32px] pt-[16px]">
             <JustReleased />
             <div className="flex mt-3 sm:mt-4">
               <h2 className="text-black text-2xl w-full font-inter font-semibold">
