@@ -24,7 +24,7 @@ const Main = () => {
   return (
     <>
       <div className="sm:px-[32px] sm:w-full bg-[#F3F3F3] pb-[32px] overflow-scroll font-inter tablet:rounded-tl-3xl rounded-none tablet:rounded-bl-3xl h-screen">
-        <div className="fixed w-[100%] mb-4 z-[100] h-20  items-center bg-[#f3f3f3] ">
+        <div className="fixed px-[20px] sm:p-0 w-full mb-4 z-[100] h-20  items-center bg-[#f3f3f3] ">
           <div className="flex z-[100px] bg-[#f3f3f3] w-full mt-5 ">
             <div className="bg-[#f3f3f3]">
               <h1 className="text-3xl font-extrabold font-inter">Home</h1>
@@ -41,10 +41,10 @@ const Main = () => {
           </div>
         </div>
 
-        <div className="flex-row  sm:flex">
+        <div className="flex-row px-[20px] sm:p-0 w-full sm:flex">
           {/* col 1 */}
 
-          <div className="mt-[80px] pr-[0px] tablet:pr-[32px] pt-[16px]">
+          <div className="mt-[80px]   tablet:pr-[32px] pt-[16px]">
             <JustReleased />
             <div className="flex mt-3 sm:mt-4">
               <h2 className="text-black text-2xl w-full font-inter font-semibold">
@@ -128,7 +128,7 @@ const Main = () => {
 
             {/* ////////////////////////////////////////////////////////////////// */}
             {/* card 3 */}
-            <div className=" rounded-2xl p-4 mt-3 pref w-full h-auto pl-[] items-center justify-between ">
+            <div className=" rounded-2xl p-4 mt-3 pref w-full h-auto items-center justify-between ">
               <div className=" items-start ml-0 p-[32px] md:grid grid-flow-col-dense bg-white rounded-2xl ">
                 <div className="tablet:hidden block w-[120px] h-[120px] mb-[20px]">
                   <img
