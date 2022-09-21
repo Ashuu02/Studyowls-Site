@@ -5,11 +5,11 @@ const Preferences = () => {
   return (
     <div className="pref rounded-2xl p-4 mt-3 w-full h-auto items-center justify-between ">
       <div className=" p-[32px] md:grid grid-flow-col-dense bg-white rounded-2xl ">
-      <div className="items-center tablet: place-items-center justify-between p-3 h-full w-full  text-center ">
+      <div className=" tablet:hidden block w-[120px] h-[120px] mb-[20px] ">
           <img
             src={preferences}
             alt="/preferences"
-            className="text-center mt-[100%] w-[120px] h-[120px] sm:mt-5 m-auto place-items-center sm:mr-3 mr-0"
+            className=""
           />
         </div>
         <div className="w-[90%]">
