@@ -145,22 +145,18 @@ const CourseLevels = () => {
                   </div>
                 </div>
                 <div className=" ml-5 pt-[3%] ">
-                  {/* <div className=" items-center text-center justify-between rounded-full"> */}
                   <HiCheckCircle className="sm:w-[26px] text-gray-300 sm:h-[26px]" />
-                  {/* </div> */}
                 </div>
               </div>
 
               {/* card 4    */}
               <div className="mt-[24px] cursor-pointer hover:scale-[101%] hover:shadow-lg hover:shadow-gray-300 ease-in-out duration-300 p-6 rounded-2xl w-[503.33px] h-[112px] flex bg-[#ffffff] ">
-                {/* <div className=""> */}
                 <img
                   src={commonDesignerRoles}
                   alt="/commonDesignerRoles"
                   width={"64"}
                   height="64"
                 />
-                {/* </div> */}
                 <div className="ml-4 w-full">
                   <h2 className=" text-base font-bold  ">
                     Common Designer Roles
@@ -183,15 +179,12 @@ const CourseLevels = () => {
                   </div>
                 </div>
                 <div className=" ml-5 pt-[3%] ">
-                  {/* <div className=" items-center text-center justify-between rounded-full"> */}
                   <HiCheckCircle className="sm:w-[26px] text-gray-300 sm:h-[26px]" />
-                  {/* </div> */}
                 </div>
               </div>
 
               {/* card 5   */}
               <div className="mt-[24px] cursor-pointer p-6 rounded-2xl w-[503.33px] h-[112px] flex border-[1.5px] ">
-                {/* <div className=""> */}
                 <img
                   src={level1Test}
                   alt="/level1Test"
@@ -218,11 +211,9 @@ const CourseLevels = () => {
                     </div>
                   </div>
                 </div>
-                
+
                 <div className=" ml-5 pt-[3%] ">
-                  {/* <div className=" items-center text-center justify-between rounded-full"> */}
                   <HiCheckCircle className="sm:w-[26px] text-gray-300 sm:h-[26px]" />
-                  {/* </div> */}
                 </div>
               </div>
             </div>

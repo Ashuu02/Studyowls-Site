@@ -23,13 +23,13 @@ import Assessments from "./Assessments";
 const Main = () => {
   return (
     <>
-      <div className="overflow-hidden px-[32px] bg-[#F3F3F3] font-inter sm:rounded-tl-3xl rounded-none sm:rounded-bl-3xl h-full w-full">
+      <div className="px-[32px] bg-[#F3F3F3] overflow-y-scroll font-inter tablet:rounded-tl-3xl rounded-none tablet:rounded-bl-3xl h-screen w-full">
         <div className="fixed w-[100%] mb-4 z-[100]  h-20  items-center bg-[#f3f3f3] ">
           <div className="flex z-[100px] bg-[#f3f3f3] w-full mt-5 ">
             <div className="bg-[#f3f3f3]">
               <h1 className="text-3xl font-extrabold font-inter">Home</h1>
             </div>
-            <div className="relative ml-[685px] max-w-[50%] pt-1 h-[44px] w-64 flex rounded-full sm:mr-0 mr-4 bg-[#e9e9ea] justify-between pl-1 pb-1 hover:border-black hover:ring-black hover:ring-2 focus-within:border-black ease-in-out duration-200 focus-within:ring-black focus-within:ring-2 items-end justify-top text-right place-items-end ">
+            <div className="relative hidden laptop:flex laptop:ml-[685px] max-w-[50%] pt-1 h-[44px] w-64 rounded-full sm:mr-0 mr-4 bg-[#e9e9ea] justify-between pl-1 pb-1 hover:border-black hover:ring-black hover:ring-2 focus-within:border-black ease-in-out duration-200 focus-within:ring-black focus-within:ring-2 items-end justify-top text-right place-items-end ">
               <BiSearch className="h-full text-gray-500 mt-2 mb-0 top-[-10%] ml-2 text-2xl" />
 
               <input
@@ -44,7 +44,7 @@ const Main = () => {
         <div className="flex-row  sm:flex">
           {/* col 1 */}
 
-          <div className="mt-[80px] pr-[32px] pt-[16px]">
+          <div className="mt-[80px] pr-[0px] tablet:pr-[32px] pt-[16px]">
             <JustReleased />
             <div className="flex mt-3 sm:mt-4">
               <h2 className="text-black text-2xl w-full font-inter font-semibold">
@@ -58,8 +58,6 @@ const Main = () => {
             <div className="mt-0 py-4 grid md:grid-cols-2 gap-8">
               {/* card 1 */}
               <div className="bg-white hover:shadow-lg p-[24px] hover:shadow-gray-300 w-full max-w-[100%] rounded-2xl hover:scale-[101%] ease-in duration-100">
-                {/* <div className="relative flex bg-white h-auto w-full rounded-xl p-4 group"> */}
-                {/* <div className=""></div> */}
                 <div className="flex rounded-lg ">
                   <img
                     src={stackImg}
@@ -94,7 +92,6 @@ const Main = () => {
               {/* card 2 */}
 
               <div className="bg-white hover:shadow-lg p-[24px] hover:shadow-gray-300 w-full max-w-[100%] rounded-2xl hover:scale-[101%] ease-in duration-100">
-                {/* <div className=""></div> */}
                 <div className="relative flex rounded-lg ">
                   <img
                     src={az}
@@ -132,7 +129,14 @@ const Main = () => {
             {/* ////////////////////////////////////////////////////////////////// */}
             {/* card 3 */}
             <div className=" rounded-2xl p-4 mt-3 pref w-full h-auto pl-[] items-center justify-between ">
-              <div className="hidden p-[32px] md:grid grid-flow-col-dense bg-white rounded-2xl ">
+              <div className=" items-start ml-0 p-[32px] md:grid grid-flow-col-dense bg-white rounded-2xl ">
+                <div className="tablet:hidden block w-[120px] h-[120px] mb-[20px]">
+                  <img
+                    src={certificate}
+                    alt="/certificate"
+                    className=""
+                  />
+                </div>
                 <div className="p-0">
                   <h2 className="text-2xl max-w-[80%] flex rounded-lg text-black sm:w-full font-inter font-extrabold font-family:Inter text-left ">
                     You haven't enrolled in any courses
@@ -144,10 +148,6 @@ const Main = () => {
                       Start improving your design skills today. Browse our
                       course catalog and enroll in a course.
                     </p>
-
-                    {/* <div className="pl-14 items-center justify-between text-center place-items-center w-full h-full"> */}
-
-                    {/* </div> */}
                   </div>
                   <div className=" items-start justify-between pt-[24px] text-start place-items-start w-full">
                     <button className="rounded-lg font-inter font-bold hover:font-extrabold hover:bg-black bg-[#5627FF] text-white  py-[10px] px-[16px]">
@@ -155,7 +155,7 @@ const Main = () => {
                     </button>
                   </div>
                 </div>
-                <div className="items-center place-items-center justify-between p-3 h-full w-full  text-center ">
+                <div className="items-center hidden tablet:block place-items-center justify-between p-3 h-full w-full  text-center ">
                   <img
                     src={certificate}
                     alt="/certificate"
@@ -163,40 +163,7 @@ const Main = () => {
                   />
                 </div>
               </div>
-
-
-
-
-              <div className="sm:hidden p-3 shadow-xl shadow-gray-400 bg-white hover:scale-105 ease-in duration-300 mt-2 rounded-2xl">
-                <div className=" ">
-                  <h2 className="text-2xl max-w-[90%] m-4 sm:ml-3 mt-3 pt-2 flex rounded-lg text-black w-full font-inter font-semibold sm:p-3 font-family:Inter text-left ">
-                    You haven't enrolled in any courses
-                  </h2>
-                </div>
-                <div className="flex rounded-lg sm:ml-5 items-center w-full max-w-full">
-                  <div className="grid grid-flow-col-dense pl-3 ml-3 sm:pl-3 sm:ml-3 h-auto">
-                    <p className="ml-3 mr-6 text-sm  text-gray-700 h-auto">
-                      Start improving your design skills today. Browse our
-                      course catalog and enroll in a course.
-                    </p>
-                    <div className="items-center justify-between text-center place-items-center w-full h-full">
-                      <img
-                        src={certificate}
-                        alt="/certificate"
-                        className="text-center place-items-center"
-                      />
-                    </div>
-                  </div>
-                </div>
-                <div className=" items-start justify-between p-2 text-start place-items-start w-full sm:p-6">
-                  <button className="rounded-lg ml-3 hover:scale-105 ease-in duration-300 hover:text-bold bg-[#5627FF] text-gray-200 pl-308px p-2 px-5">
-                    Browse Courses
-                  </button>
-                </div>
-              </div>
             </div>
-
-
 
             <div className="flex mt-[40px] ">
               <h2 className="text-black text-2xl w-full font-inter font-semibold">
@@ -214,7 +181,7 @@ const Main = () => {
           {/* //////////////////////////////////////////////////////////////////////////////////////////// */}
 
           {/* col 2 */}
-          <div className="mt-[80px] pt-[16px] flex-col-1 max-w-[320px] ">
+          <div className=" laptop:block hidden mt-[80px] pt-[16px] flex-col-1 max-w-full ">
             <div className="items-center rounded-t-3xl justify-between text-center">
               <img
                 src={iconRectangle}
@@ -223,21 +190,26 @@ const Main = () => {
               />
             </div>
 
-            <div className="relative rounded-bl-2xl rounded-br-2xl  p-[24px] w-full flex flex-col items-center bg-[#ffffff] ">
+            <div className="relative rounded-bl-2xl rounded-br-2xl  p-[24px] flex flex-col items-center bg-[#ffffff] ">
               <div className="absolute rounded-full bg-white top-[-4%] h-[90px] w-[90px] p-[4.5px] sm:p-[2%] items-center  text-center justify-center ">
-
                 <div className="rounded-full right-[5.5%] absolute top-[5.5%] w-[80px] h-[80px] bg-blue-500 text-center items-center p-[6px] text-white">
                   <h1 className="text-[40px] mt-1 text-extrabold">K</h1>
                 </div>
               </div>
 
               <div className="mt-[32px] mb-[24px] items-center w-full text-center ">
-                <h2 className="w-full text-base font-semibold">Koteru Prashanth Reddy</h2>
-                <p className="text-gray-600 text-sm mt-[4px] text-center">C-Level</p>
+                <h2 className="w-full text-base font-semibold">
+                  Koteru Prashanth Reddy
+                </h2>
+                <p className="text-gray-600 text-sm mt-[4px] text-center">
+                  C-Level
+                </p>
               </div>
 
               <div className="pt-[24px] border-y-[1px] pb-[24px] w-full">
-                <h2 className="w-full text-base font-semibold">Profile Strength</h2>
+                <h2 className="w-full text-base font-semibold">
+                  Profile Strength
+                </h2>
                 {/* flex items-center justify-between max-w-[330px] m-auto py-4 */}
                 <div className=" flex items-center justify-between max-w-full py-4">
                   <div className="relative  w-full mt-5 rounded-full bg-[#e9e9ea] border items-center text-center justify-between place-items-center">
@@ -364,8 +336,6 @@ const Main = () => {
               </button>
             </div>
           </div>
-
-
         </div>
       </div>
     </>
