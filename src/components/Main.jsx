@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useState} from "react";
 import stackImg from "../assets/stack.png";
 import level from "../assets/difficulty-level.png";
 import az from "../assets/az.png";
@@ -10,7 +10,7 @@ import profile2 from "../assets/profile-2.png";
 import profile3 from "../assets/profile-3.png";
 import { FiPlay } from "react-icons/fi";
 import Navbar from "./Navbar";
-import { BsThreeDots } from "react-icons/bs";
+import { BsPlayFill, BsThreeDots } from "react-icons/bs";
 import { BiSearch, BiMenu } from "react-icons/bi";
 import JustReleased from "./JustReleased";
 import skillGraph from "../assets/skillGraph.png";
@@ -19,8 +19,15 @@ import SkillTests from "./SkillTests";
 import Extras from "./Extras";
 import "./Preferences.css";
 import Assessments from "./Assessments";
+import CourseDiv from "./Courses/CourseDiv";
+import { AiOutlineClose, AiOutlineTeam } from "react-icons/ai";
 
 const Main = () => {
+  const [nav, setNav] = useState(false);
+
+  const handleNav = () => {
+    setNav(!nav);
+  };
   return (
     <>
       <div className="sm:px-[32px] sm:w-full bg-[#F3F3F3] pb-[32px] overflow-scroll font-inter tablet:rounded-tl-3xl rounded-none tablet:rounded-bl-3xl h-screen">
@@ -40,15 +47,97 @@ const Main = () => {
             </div>
             <div className="relative flex  items-end justify-end text-right tablet:hidden rounded-full ">
               <div className="rounded-full ml-[-10%] bg-[#e9e9ea] p-2 ">
-                <BiMenu className=" font-extrabold text-2xl " />
+                <BiMenu onClick={handleNav} className=" font-extrabold text-2xl " />
               </div>
             </div>
           </div>
         </div>
+        
+        <div
+              className={
+                nav
+                  ? "sm:hidden fixed overflow-auto left-0 top-0 w-full h-screen bg-black/70"
+                  : ""
+              }
+            >
+              <div
+                className={
+                  nav
+                    ? " fixed overflow-scroll right-0 top-0 rounded-tl-3xl rounded-bl-3xl pt-8 w-[336px] h-screen bg-[#ffffff] pl-[16px] pr-[16px] ease-in-out duration-300"
+                    : " fixed right-[-100%] top-0 p-10 ease-in-out duration-700 "
+                }
+              >
+                <div className=" flex items-end justify-end text-right place-items-end w-full ">
+                  <div
+                    onClick={handleNav}
+                    className=" rounded-full mr-2 bg-gray-100 hover:bg-gray-200 p-2 cursor-pointer"
+                  >
+                    <AiOutlineClose className="font-extrabold text-lg " />
+                  </div>
+                </div>
+                {/* <div
+                  className={
+                    nav
+                      ? " fixed right-0 top-0 w-[67%] pt-7  sm:w-[60%] md:w-[45%] h-screen bg-[#ffffff]  ease-in duration-200"
+                      : " fixed right-[-100%] top-0 p-10 ease-in duration-200 "
+                  }
+                >
+                  <CourseDiv />
+                </div> */}
+                <div className=" fixed overflow-auto mt-5">
+                  <div className=" flex rounded-lg ">
+                    <img
+                      src={stackImg}
+                      alt="/stackImg"
+                      className="top-[-20%] rounded-lg"
+                      width={80}
+                      height={80}
+                    />
+                    <div className=" items-end justify-top text-right place-items-end w-full">
+                      <button className="rounded-lg font-inter bg-[#f3f3f3] p-1">
+                        <p className="font-bold text-xs px-1">POPULAR</p>
+                      </button>
+                    </div>
+                  </div>
+                  <p className=" uppercase text-sm mt-6 font-bold text-[#05060f99] mb-3 ">
+                    COURSE
+                  </p>
+                  <h2 className="font-sora mt-4 mb-3 w-full text-3xl font-bold">
+                    UX Design Foundations
+                  </h2>
+                  <p className="text-[20px] ">
+                    Learn about the user experience (UX) industry and explore
+                    the basic concepts and roles within the UX field.
+                  </p>
+                  <button className=" text-center items-center mt-6 laptop:w-auto w-full h-[44px] px-[18px] hover:bg-black ease-in-out duration-200 bg-[#5627FF] py-2 rounded-xl">
+                    <div className=" text-center items-center w-full font-extrabold text-white flex  ">
+                      <BsPlayFill className=" h-[28px] w-[28px] items-end ml-9 text-right font-extrabold " />
+                      <p className="mt-[2px] items-start text-start ">
+                        Start Learning for free
+                      </p>
+                    </div>
+                  </button>
+                  <button className=" text-center items-center mt-6 laptop:w-auto w-full h-[44px] px-[18px] hover:bg-black hover:text-white ease-in-out duration-200 bg-[#e9e9ea] py-2 rounded-xl">
+                    <div className=" text-center items-center w-full font-extrabold flex  ">
+                      <AiOutlineTeam className=" h-[28px] w-[28px] items-end ml-16 text-right font-extrabold " />
+                      <p className="mt-[2px] items-start text-start ">
+                        Train your team
+                      </p>
+                    </div>
+                  </button>
+                </div>
+
+
+                <div className=" overflow-auto fixed ">
+                  <CourseDiv/>
+                </div>
+              </div>
+            </div>
+
 
         {/* <div className="flex-row p-0 sm:flex"> */}
 
-        <div className="mt-0 py-4 desktop:grid desktop:grid-cols-2 gap-8 flex-row p-0 sm:flex ">
+        <div className="mt-0 py-4 sm:pl-0 pl-3 desktop:grid desktop:grid-cols-2 flex-row p-0 sm:flex ">
           {/* col 1 */}
 
           <div className="mt-[80px] tablet:pr-[32px] pt-[16px]">
@@ -62,7 +151,7 @@ const Main = () => {
               </p>
             </div>
 
-            <div className="mt-0 py-4 grid md:grid-cols-2 gap-8">
+            <div className="mt-0 py-4 px-3 grid md:grid-cols-2 gap-8">
               {/* card 1 */}
               <div className="bg-white hover:shadow-lg p-[24px] hover:shadow-gray-300 w-full rounded-2xl hover:scale-[101%] ease-in duration-100">
                 <div className="flex rounded-lg ">
@@ -129,7 +218,7 @@ const Main = () => {
               </div>
             </div>
 
-            <div className="mt-3 sm:mt-4 font-extrabold">
+            <div className="mt-3 ml-3 sm:mt-4 font-extrabold">
               <h2 className="text-2xl">Continue Learning</h2>
             </div>
 

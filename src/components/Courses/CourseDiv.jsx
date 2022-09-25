@@ -34,10 +34,10 @@ const CourseDiv = () => {
             
             <div className="p-1">
               {/* <div className="rounded-lg sm:mt-[18px] mt-[14px]"> */}
-              <p className=" uppercase text-[14px] font-bold tracking-wider text-[#05060f99] mb-3 ">
+              <p className=" uppercase text-sm font-bold text-[#05060f99] mb-3 ">
                 DESIGN COURSE
               </p>
-              <h2 className="font-sora w-full text-[47px] font-bold">
+              <h2 className="font-sora w-full text-5xl font-bold">
                 UX Design Foundations
               </h2>
               <p className="mt-3 text-[20px] ">

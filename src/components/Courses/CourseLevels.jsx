@@ -41,7 +41,7 @@ const CourseLevels = () => {
 
   return (
     <>
-      <div className="bg-[#f3f3f3] pt-[32px] sm:pt-[16px] w-full rounded-tl-3xl rounded-tr-3xl  laptop:px-[32px] pb-[112px] ">
+      <div className="bg-[#f3f3f3] px-4 sm:px-0 pt-[32px] sm:pt-[16px] w-full rounded-tl-3xl rounded-tr-3xl  laptop:px-[32px] pb-[112px] ">
         <div className="w-auto laptop:flex mt-[16px]">
           <div>
             {/* Level 1   */}
