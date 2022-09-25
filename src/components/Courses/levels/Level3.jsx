@@ -11,14 +11,14 @@ import { BiHeart } from "react-icons/bi";
 
 const Level3 = () => {
   return (
-    <div className=" mt-[44px]  ml-[56px] ">
+    <div className=" mt-[44px] laptop:ml-[56px] sm:ml-[24px] sm:mr-[24px]">
       <p className=" uppercase text-xs font-extrabold tracking-wider text-[#05060f99]">
         LEVEL 3
       </p>
       <h2 className="text-[20px] font-bold mt-[12px]">Elements of Design II</h2>
 
       {/* card 1 */}
-      <div className="mt-[24px] cursor-pointer hover:scale-[101%] hover:shadow-lg hover:shadow-gray-200 ease-in-out duration-200 p-6 rounded-2xl w-[503.33px] h-[112px] flex bg-[#ffffff] ">
+      <div className="mt-[24px] cursor-pointer hover:scale-[101%] hover:shadow-lg hover:shadow-gray-200 ease-in-out duration-200 p-6 rounded-2xl w-auto h-[112px] flex bg-[#ffffff] ">
         {/* <div className=""> */}
         <img src={img1} alt="/UXImg" width={"64"} height="64" />
         {/* </div> */}
@@ -44,7 +44,7 @@ const Level3 = () => {
       </div>
 
       {/* card 2 */}
-      <div className="mt-[24px] cursor-pointer hover:scale-[101%] hover:shadow-lg hover:shadow-gray-300 ease-in-out duration-300 p-6 rounded-2xl w-[503.33px] h-[112px] flex bg-[#ffffff] ">
+      <div className="mt-[24px] cursor-pointer hover:scale-[101%] hover:shadow-lg hover:shadow-gray-300 ease-in-out duration-300 p-6 rounded-2xl w-auto h-[112px] flex bg-[#ffffff] ">
         <img src={img2} alt="/puzzleImg" width={"64"} height="64" />
         <div className="ml-4 w-full">
           <h2 className=" text-base font-bold  ">
@@ -71,7 +71,7 @@ const Level3 = () => {
       </div>
 
       {/* card 3    */}
-      <div className="mt-[24px] cursor-pointer hover:scale-[101%] hover:shadow-lg hover:shadow-gray-300 ease-in-out duration-300 p-6 rounded-2xl w-[503.33px] h-[112px] flex bg-[#ffffff] ">
+      <div className="mt-[24px] cursor-pointer hover:scale-[101%] hover:shadow-lg hover:shadow-gray-300 ease-in-out duration-300 p-6 rounded-2xl w-auto h-[112px] flex bg-[#ffffff] ">
         {/* <div className=""> */}
         <img src={img3} alt="/UI_elements" width={"64"} height="64" />
         {/* </div> */}
@@ -98,7 +98,7 @@ const Level3 = () => {
       </div>
 
       {/* card 4    */}
-      <div className="mt-[24px] cursor-pointer hover:scale-[101%] hover:shadow-lg hover:shadow-gray-300 ease-in-out duration-300 p-6 rounded-2xl w-[503.33px] h-[112px] flex bg-[#ffffff] ">
+      <div className="mt-[24px] cursor-pointer hover:scale-[101%] hover:shadow-lg hover:shadow-gray-300 ease-in-out duration-300 p-6 rounded-2xl w-auto h-[112px] flex bg-[#ffffff] ">
         {/* <div className=""> */}
         <img src={img4} alt="/commonDesignerRoles" width={"64"} height="64" />
         {/* </div> */}
@@ -125,7 +125,7 @@ const Level3 = () => {
       </div>
 
       {/* card 5 */}
-      <div className="mt-[24px] cursor-pointer hover:scale-[101%] hover:shadow-lg hover:shadow-gray-300 ease-in-out duration-300 p-6 rounded-2xl w-[503.33px] h-[112px] flex bg-[#ffffff] ">
+      <div className="mt-[24px] cursor-pointer hover:scale-[101%] hover:shadow-lg hover:shadow-gray-300 ease-in-out duration-300 p-6 rounded-2xl w-auto h-[112px] flex bg-[#ffffff] ">
         {/* <div className=""> */}
         <img src={img5} alt="/commonDesignerRoles" width={"64"} height="64" />
         {/* </div> */}
@@ -152,7 +152,7 @@ const Level3 = () => {
       </div>
 
       {/* card 6   */}
-      <div className="mt-[24px] cursor-pointer p-6 rounded-2xl w-[503.33px] h-[112px] flex border-[1.5px] ">
+      <div className="mt-[24px] cursor-pointer p-6 rounded-2xl w-auto h-[112px] flex border-[1.5px] ">
         {/* <div className=""> */}
         <img src={img6} alt="/level1Test" width={"64"} height="64" />
         {/* </div> */}

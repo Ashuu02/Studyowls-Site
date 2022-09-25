@@ -10,13 +10,21 @@ import { FiClock } from "react-icons/fi";
 const CourseDiv = () => {
   return (
     <>
-      <div className=" mt-[80px] px-[40px] py-[64px] tablet:p-[64px] ">
-        <div className="text-black ">
+      <div className="  w-full sm:px-[40px] pb-[64px] px-0 tablet:p-[64px] ">
+        <div className="text-black w-full">
           <div className="bg-white md:grid grid-flow-col-dense w-full max-w-[100%]">
             {/* <div className="relative flex bg-white h-auto w-full rounded-xl p-4 group"> */}
             {/* <div className=""></div> */}
             
-            <div className=" laptop:hidden block mb-5 sm:w-[80px] sm:h-[80px] tablet:h-[144px] tablet:w-[144px] rounded-lg tablet:ml-[64px]">
+            <div className=" tablet:hidden block mb-5 w-[80px] h-[80px] rounded-lg  ">
+              <img
+                src={stackImg}
+                alt="/stackImg"
+                className=""
+              />
+            </div>
+
+            <div className=" laptop:hidden hidden tablet:block mb-5 sm:h-[144px] sm:w-[144px] rounded-lg ">
               <img
                 src={stackImg}
                 alt="/stackImg"
@@ -24,7 +32,7 @@ const CourseDiv = () => {
               />
             </div>
             
-            <div>
+            <div className="p-1">
               {/* <div className="rounded-lg sm:mt-[18px] mt-[14px]"> */}
               <p className=" uppercase text-[14px] font-bold tracking-wider text-[#05060f99] mb-3 ">
                 DESIGN COURSE
@@ -32,7 +40,7 @@ const CourseDiv = () => {
               <h2 className="font-sora w-full text-[47px] font-bold">
                 UX Design Foundations
               </h2>
-              <p className="mt-3 text-xl ">
+              <p className="mt-3 text-[20px] ">
                 Learn about the user experience (UX) industry and explore the
                 basic concepts and roles within the UX field.
               </p>
@@ -55,10 +63,10 @@ const CourseDiv = () => {
                 </div>
               </div>
 
-              <button className=" mt-6 h-[44px] px-[18px] hover:bg-black ease-in-out duration-200 bg-[#5627FF] py-2 rounded-xl">
-                <div className="font-extrabold text-white flex">
+              <button className=" text-center items-center mt-6 laptop:w-auto w-full h-[44px] px-[18px] hover:bg-black ease-in-out duration-200 bg-[#5627FF] py-2 rounded-xl">
+                <div className=" text-center items-center w-full font-extrabold text-white flex">
                   <BsPlayFill className=" h-[28px] w-[28px] items-center text-center justify-center font-extrabold " />
-                  <p className="mt-[2px]">{"  "}Start Learning for free</p>
+                  <p className="mt-[2px] w-full ">{"  "}Start Learning for free</p>
                 </div>
               </button>
             </div>

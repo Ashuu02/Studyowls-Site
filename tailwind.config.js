@@ -8,13 +8,15 @@ module.exports = {
         sora: ["Sora", "sans-serif"],
       },
       screens: {
-        'tablet': "767px",
+        'mobile': "350px",
         // => @media (min-width: 640px) { ... }
 
+        'tablet': "767px",
+        
         // 'laptop': '1024px',
         // => @media (min-width: 1024px) { ... }
         'laptop': "1200px",
-        'desktop': "1280px",
+        'desktop': "1400px",
         // => @media (min-width: 1280px) { ... }
       },
       fontWeight: {

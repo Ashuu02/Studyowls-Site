@@ -48,8 +48,8 @@ const CourseDescription = () => {
   //   }
 
   return (
-    <div className="pl-[32px]">
-      <div className=" w-full  rounded-3xl bg-white p-[40px]  ">
+    <div className=" laptop:pl-[32px] laptop:block hidden mt-[80px] pt-[16px] flex-col-1 max-w-full ">
+      <div className="  w-full rounded-3xl bg-white p-[40px]  ">
         <p className=" text-gray-500 mb-[16px] text-[14px] uppercase font-bold ">
           Course Description
         </p>
@@ -62,9 +62,9 @@ const CourseDescription = () => {
           <span id="more"></span>
         </p>
 
-        {/* <button onclick={myFunction()} className=" underline ">
-        Read more
-      </button> */}
+            {/* <button onclick={myFunction()} className=" underline ">
+            Read more
+          </button> */}
         <p className=" mt-[40px] text-gray-500 mb-[16px] text-[14px] uppercase font-bold ">
           Course Details
         </p>

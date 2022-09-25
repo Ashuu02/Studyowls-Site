@@ -11,7 +11,7 @@ import profile3 from "../assets/profile-3.png";
 import { FiPlay } from "react-icons/fi";
 import Navbar from "./Navbar";
 import { BsThreeDots } from "react-icons/bs";
-import { BiSearch } from "react-icons/bi";
+import { BiSearch, BiMenu } from "react-icons/bi";
 import JustReleased from "./JustReleased";
 import skillGraph from "../assets/skillGraph.png";
 import Preferences from "./Preferences";
@@ -25,11 +25,11 @@ const Main = () => {
     <>
       <div className="sm:px-[32px] sm:w-full bg-[#F3F3F3] pb-[32px] overflow-scroll font-inter tablet:rounded-tl-3xl rounded-none tablet:rounded-bl-3xl h-screen">
         <div className="fixed px-[20px] sm:p-0 w-full mb-4 z-[100] h-20  items-center bg-[#f3f3f3] ">
-          <div className="flex z-[100px] bg-[#f3f3f3] w-full mt-5 ">
+          <div className="grid grid-cols-2 z-[100px] bg-[#f3f3f3] w-full mt-5 ">
             <div className="bg-[#f3f3f3]">
               <h1 className="text-3xl font-extrabold font-inter">Home</h1>
             </div>
-            <div className="relative hidden laptop:flex laptop:ml-[685px] max-w-[50%] pt-1 h-[44px] w-64 rounded-full sm:mr-0 mr-4 bg-[#e9e9ea] justify-between pl-1 pb-1 hover:border-black hover:ring-black hover:ring-2 focus-within:border-black ease-in-out duration-200 focus-within:ring-black focus-within:ring-2 items-end justify-top text-right place-items-end ">
+            <div className="relative tablet:ml-[20%] desktop:ml-[30%] hidden tablet:flex pt-1 h-[44px] w-64 rounded-full sm:mr-0 mr-4 bg-[#e9e9ea] justify-between pl-1 pb-1 hover:border-black hover:ring-black hover:ring-2 focus-within:border-black ease-in-out duration-200 focus-within:ring-black focus-within:ring-2 items-end justify-top text-right place-items-end ">
               <BiSearch className="h-full text-gray-500 mt-2 mb-0 top-[-10%] ml-2 text-2xl" />
 
               <input
@@ -38,13 +38,20 @@ const Main = () => {
                 placeholder="Search"
               />
             </div>
+            <div className="relative flex  items-end justify-end text-right tablet:hidden rounded-full ">
+              <div className="rounded-full ml-[-10%] bg-[#e9e9ea] p-2 ">
+                <BiMenu className=" font-extrabold text-2xl " />
+              </div>
+            </div>
           </div>
         </div>
 
-        <div className="flex-row p-0 sm:flex">
+        {/* <div className="flex-row p-0 sm:flex"> */}
+
+        <div className="mt-0 py-4 desktop:grid desktop:grid-cols-2 gap-8 flex-row p-0 sm:flex ">
           {/* col 1 */}
 
-          <div className="mt-[80px]  tablet:pr-[32px] pt-[16px]">
+          <div className="mt-[80px] tablet:pr-[32px] pt-[16px]">
             <JustReleased />
             <div className="flex mt-3 sm:mt-4">
               <h2 className="text-black text-2xl w-full font-inter font-semibold">
@@ -57,7 +64,7 @@ const Main = () => {
 
             <div className="mt-0 py-4 grid md:grid-cols-2 gap-8">
               {/* card 1 */}
-              <div className="bg-white hover:shadow-lg p-[24px] hover:shadow-gray-300 w-full max-w-[100%] rounded-2xl hover:scale-[101%] ease-in duration-100">
+              <div className="bg-white hover:shadow-lg p-[24px] hover:shadow-gray-300 w-full rounded-2xl hover:scale-[101%] ease-in duration-100">
                 <div className="flex rounded-lg ">
                   <img
                     src={stackImg}
@@ -131,11 +138,7 @@ const Main = () => {
             <div className=" rounded-2xl p-4 mt-3 pref w-full h-auto items-center justify-between ">
               <div className=" items-start ml-0 p-[32px] md:grid grid-flow-col-dense bg-white rounded-2xl ">
                 <div className="tablet:hidden block w-[120px] h-[120px] mb-[20px]">
-                  <img
-                    src={certificate}
-                    alt="/certificate"
-                    className=""
-                  />
+                  <img src={certificate} alt="/certificate" className="" />
                 </div>
                 <div className="p-0">
                   <h2 className="text-2xl max-w-[80%] flex rounded-lg text-black sm:w-full font-inter font-extrabold font-family:Inter text-left ">
@@ -181,7 +184,7 @@ const Main = () => {
           {/* //////////////////////////////////////////////////////////////////////////////////////////// */}
 
           {/* col 2 */}
-          <div className=" laptop:block hidden mt-[80px] pt-[16px] flex-col-1 max-w-full ">
+          <div className=" laptop:block hidden mt-[80px] pt-[16px] flex-col-1 w-auto ">
             <div className="items-center rounded-t-3xl justify-between text-center">
               <img
                 src={iconRectangle}
@@ -285,7 +288,7 @@ const Main = () => {
                   <BsThreeDots className="items-end w-full text-right text-xl place-items-end justify-end ml-[40%] mb-[12px]" />
                 </div>
               </div>
-              <div className="w-full">
+              <div className="max-w-full items-center justify-between text-center">
                 <img src={skillGraph} alt="/skillGraph" />
               </div>
 

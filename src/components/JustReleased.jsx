@@ -5,7 +5,7 @@ const JustReleased = () => {
   return (
     <>
       <div className="">
-        <div className="mb-[40px]">
+        <div className=" mb-[40px] ">
           <div className="p-[40px] sm:w-full sm:h-[378] md:grid grid-flow-col-dense bg-[#05060f] rounded-3xl ">
             <div className="w-[128px] tablet:hidden block ml-[0px] mb-[30px] tablet:ml-[40px] h-[128px]">
               <img
@@ -18,7 +18,7 @@ const JustReleased = () => {
               <p className=" font-extrabold text-[12px] text-gray-400 h-auto">
                 JUST RELEASED
               </p>
-              <h2 className="text-5xl pr-10 tracking-normal pb-2 mb-3 pt-2 mt-[12px] flex text-white sm:w-full font-inter font-black font-family:Inter text-left ">
+              <h2 className="text-4xl pr-10 tracking-normal pb-2 mb-3 pt-2 mt-[12px] flex text-white sm:w-full font-inter font-black font-family:Inter text-left ">
                 Prototyping Skill Test
               </h2>
 
