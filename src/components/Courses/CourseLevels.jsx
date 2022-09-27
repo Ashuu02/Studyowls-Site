@@ -37,11 +37,10 @@ import l6_test from "../../assets/level5/test.svg";
 
 const CourseLevels = () => {
 
-  const [isShown, setIsShown] = useState(false);
 
   return (
     <>
-      <div className="bg-[#f3f3f3] px-4 sm:px-0 pt-[32px] sm:pt-[16px] w-full rounded-tl-3xl rounded-tr-3xl  laptop:px-[32px] pb-[112px] ">
+      <div className="bg-[#f3f3f3] max-w-[95%] sm:max-w-[100%] px-4 sm:px-0 pt-[32px] sm:pt-[16px] w-full rounded-tl-3xl rounded-tr-3xl  laptop:px-[32px] pb-[112px] ">
         <div className="w-auto laptop:flex mt-[16px]">
           <div>
             {/* Level 1   */}
@@ -67,9 +66,9 @@ const CourseLevels = () => {
                     <p className="text-sm ">7 exercises</p>
                   </div>
                 </div>
-                <div onMouseEnter={()=>{}} className=" opacity-0 absolute hover:opacity-100 shadow-lg text-right hover:shadow-gray-200 justify-right items-end pt-[6%] pl-[78%] duration-300 inset-0 z-10 font-bold  ">
+                <div className=" opacity-0 absolute hover:opacity-100 shadow-lg text-right hover:shadow-gray-200 justify-right items-end pt-[6%] pl-[78%] duration-300 inset-0 z-10 font-bold  ">
                   <div className="flex  ">
-                    <div className=" h-[45px] p-1 w-[45px] bg-white rounded-full hover:bg-gray-200 text-center justify-between items-center border-[0.1px] border-gray-200 ">
+                    <div className=" h-[45px] p-1 w-[45px] bg-white rounded-full hover:bg-gray-300 text-center justify-between items-center border-[0.1px] border-gray-200 ">
                       <HiOutlineBookOpen className=" sm:w-[26px] ml-[15%] mt-1 items-end text-right text-gray-800 sm:h-[26px]" />
                     </div>
                     <div className=" h-[45px] bg-[#5627FF] ml-2 p-2 w-[45px] rounded-full hover:bg-black text-center justify-between items-center border-[0.1px] border-gray-200 ">
@@ -89,20 +88,22 @@ const CourseLevels = () => {
               {/* card 2 */}
               <div className="mt-[24px] cursor-pointer hover:scale-[101%] hover:shadow-lg hover:shadow-gray-300 ease-in-out duration-300 p-6 rounded-2xl w-auto h-[112px] flex bg-[#ffffff] ">
                 {/* <div className=""> */}
-                <img src={puzzle} alt="/puzzleImg" width={"64"} height="64" />
+                <img
+                  src={puzzle}
+                  alt="/puzzle_img"
+                  width={"64"}
+                  height="64"
+                />
                 {/* </div> */}
                 <div className="ml-4 w-full">
-                  <h2 className=" text-base font-bold  ">
-                    UX Design Principles
-                  </h2>
+                  <h2 className=" text-base font-bold  ">UX Design Principles</h2>
                   <div className=" pt-[12px] align-text-bottom flex text-gray-400 ">
                     <BsClock className=" mr-[6px] font-bold text-gray-600" />
-                    <p className="text-sm mr-[10px]">4 min</p>
+                    <p className="text-sm mr-[10px]">5 min</p>
                     <BsFiles className=" mr-[6px] font-bold text-gray-600 " />
-                    <p className="text-sm ">7 exercises</p>
+                    <p className="text-sm ">10 exercises</p>
                   </div>
                 </div>
-
                 <div className=" opacity-0 absolute hover:opacity-100 shadow-lg text-right hover:shadow-gray-200 justify-right items-end pt-[6%] pl-[78%] duration-300 inset-0 z-10 font-bold  ">
                   <div className="flex ">
                     <div className=" h-[45px] p-1 w-[45px] bg-white rounded-full hover:bg-gray-200 text-center justify-between items-center border-[0.1px] border-gray-200 ">
@@ -117,7 +118,6 @@ const CourseLevels = () => {
                   <HiCheckCircle className="sm:w-[26px] text-gray-300 sm:h-[26px]" />
                 </div>
               </div>
-
               {/* card 3    */}
               <div className="mt-[24px] cursor-pointer hover:scale-[101%] hover:shadow-lg hover:shadow-gray-300 ease-in-out duration-300 p-6 rounded-2xl w-auto h-[112px] flex bg-[#ffffff] ">
                 {/* <div className=""> */}

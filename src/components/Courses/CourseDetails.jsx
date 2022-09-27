@@ -21,7 +21,9 @@ const CourseDetails = () => {
 
   return (
     <>
-      <div className=" tablet:ml-[178px] ml-0 bg-[#ffffff] fixed overflow-scroll font-inter tablet:rounded-tl-3xl rounded-none tablet:rounded-bl-3xl h-screen">
+      {/* <div className=" tablet:ml-[178px] ml-0 bg-[#ffffff] fixed overflow-scroll font-inter tablet:rounded-tl-3xl rounded-none tablet:rounded-bl-3xl h-screen"> */}
+      <div className=" bg-[#ffffff] fixed overflow-scroll font-inter tablet:rounded-tl-3xl rounded-none tablet:rounded-bl-3xl h-screen">
+
         <div className=" fixed border-b-[1px] rounded-tl-3xl rounded-none w-[100%] mb-4 z-[100] h-20 items-center bg-[#ffffff]">
           <div className=" fixed flex z-[100px] w-full mt-5 ">
             <div className=" fixed w-full ml-[32px] h-[44px] px-[16px] max-w-[100px] py-2 bg-gray-100 rounded-lg tablet:rounded-xl tablet:block hidden text-extrabold ">
@@ -64,14 +66,14 @@ const CourseDetails = () => {
                   ? "sm:hidden fixed overflow-auto left-0 top-0 w-full h-screen bg-black/70"
                   : ""
               }
-            >
+                  >
               <div
                 className={
                   nav
                     ? " fixed overflow-scroll right-0 top-0 rounded-tl-3xl rounded-bl-3xl pt-8 w-[336px] h-screen bg-[#ffffff] pl-[16px] pr-[16px] ease-in-out duration-300"
                     : " fixed right-[-100%] top-0 p-10 ease-in-out duration-700 "
                 }
-              >
+                >
                 <div className=" flex items-end justify-end text-right place-items-end w-full ">
                   <div
                     onClick={handleNav}
@@ -89,7 +91,7 @@ const CourseDetails = () => {
                 >
                   <CourseDiv />
                 </div> */}
-                <div className=" fixed overflow-auto mt-5">
+                <div className=" fixed mt-5">
                   <div className=" flex rounded-lg ">
                     <img
                       src={stackImg}
@@ -145,7 +147,9 @@ const CourseDetails = () => {
           <CourseDiv />
         </div>
 
-        <CourseLevels/>
+        <div className="pt-[144px] w-full  ">
+          <CourseLevels />
+        </div>
       </div>
     </>
   );

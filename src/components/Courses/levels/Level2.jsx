@@ -11,8 +11,6 @@ import { BiHeart } from "react-icons/bi";
 import { BsBook } from "react-icons/bs";
 
 const Level2 = () => {
-  const [isShown, setIsShown] = useState(false);
-
   return (
     <div className=" mt-[44px] laptop:ml-[56px] sm:ml-[24px] sm:mr-[24px] ">
       <p className=" uppercase text-xs font-extrabold tracking-wider text-[#05060f99]">
@@ -21,13 +19,7 @@ const Level2 = () => {
       <h2 className="text-[20px] font-bold mt-[12px]">Elements of Design I</h2>
 
       {/* card 1 */}
-      <div
-        onMouseEnter={() => {
-          setIsShown(false);
-        }}
-        onMouseLeave={() => setIsShown(true)}
-        className="mt-[24px] cursor-pointer  hover:scale-[101%] hover:shadow-lg hover:shadow-gray-200 ease-in-out duration-200 px-6 rounded-2xl w-auto h-[112px] flex bg-[#ffffff] "
-      >
+      <div className="mt-[24px] cursor-pointer  hover:scale-[101%] hover:shadow-lg hover:shadow-gray-300 ease-in-out duration-300 p-6 rounded-2xl w-auto h-[112px] flex bg-[#ffffff] ">
         {/* <div className=""> */}
         <img src={img1} alt="/UXImg" width={"64"} height="64" />
         {/* </div> */}
@@ -43,27 +35,17 @@ const Level2 = () => {
           </div>
         </div>
         <div className=" opacity-0 absolute hover:opacity-100 shadow-lg text-right hover:shadow-gray-200 justify-right items-end pt-[7.5%] pl-[90%] duration-300 inset-0 z-10 font-bold  ">
-          {isShown && (
-            <div className="w-[45px] mt-[-10%] ml-[-30%] h-[45px] p-1 bg-white rounded-full hover:bg-gray-200 text-center justify-between items-center border-[0.1px] border-gray-200 ">
-              <HiOutlineBookOpen className="sm:w-[26px] ml-[15%] mt-1 items-end text-right text-gray-800 sm:h-[26px]" />
-            </div>
-          )}
-        </div>
-        {isShown && (
-          <div className=" ml-5 pt-[3%] ">
-            <HiCheckCircle className="sm:w-[26px] text-gray-300 sm:h-[26px]" />
+          <div className="w-[45px] mt-[-10%] ml-[-30%] h-[45px] p-1 bg-white rounded-full hover:bg-gray-200 text-center justify-between items-center border-[0.1px] border-gray-200 ">
+            <HiOutlineBookOpen className="sm:w-[26px] ml-[15%] mt-1 items-end text-right text-gray-800 sm:h-[26px]" />
           </div>
-        )}
+        </div>
+        <div className=" ml-5 pt-[3%] ">
+          <HiCheckCircle className="sm:w-[26px] text-gray-300 sm:h-[26px]" />
+        </div>
       </div>
 
       {/* card 2 */}
-      <div
-        onMouseEnter={() => {
-          setIsShown(false);
-        }}
-        onMouseLeave={() => setIsShown(true)}
-        className="mt-[24px] cursor-pointer hover:scale-[101%] hover:shadow-lg hover:shadow-gray-300 ease-in-out duration-300 p-6 rounded-2xl w-auto h-[112px] flex bg-[#ffffff] "
-      >
+      <div className="mt-[24px] cursor-pointer hover:scale-[101%] hover:shadow-lg hover:shadow-gray-300 ease-in-out duration-300 p-6 rounded-2xl w-auto h-[112px] flex bg-[#ffffff] ">
         {/* <div className=""> */}
         <img src={img2} alt="/puzzleImg" width={"64"} height="64" />
         {/* </div> */}
@@ -84,21 +66,14 @@ const Level2 = () => {
             <HiOutlineBookOpen className="sm:w-[26px] ml-[15%] mt-1 items-end text-right text-gray-800 sm:h-[26px]" />
           </div>
         </div>
-        {isShown && (
-          <div className="w-[45px] mt-[-10%] ml-[-30%] h-[45px] p-1 bg-white rounded-full hover:bg-gray-200 text-center justify-between items-center border-[0.1px] border-gray-200 ">
-            <HiOutlineBookOpen className="sm:w-[26px] ml-[15%] mt-1 items-end text-right text-gray-800 sm:h-[26px]" />
-          </div>
-        )}
+
+        <div className=" ml-5 pt-[3%] ">
+          <HiCheckCircle className="sm:w-[26px] text-gray-300 sm:h-[26px]" />
+        </div>
       </div>
 
       {/* card 3    */}
-      <div
-        onMouseEnter={() => {
-          setIsShown(true);
-        }}
-        onMouseLeave={() => setIsShown(false)}
-        className="mt-[24px] cursor-pointer hover:scale-[101%] hover:shadow-lg hover:shadow-gray-300 ease-in-out duration-300 p-6 rounded-2xl w-auto h-[112px] flex bg-[#ffffff] "
-      >
+      <div className="mt-[24px] cursor-pointer hover:scale-[101%] hover:shadow-lg hover:shadow-gray-300 ease-in-out duration-300 p-6 rounded-2xl w-auto h-[112px] flex bg-[#ffffff] ">
         {/* <div className=""> */}
         <img src={img3} alt="/UI_elements" width={"64"} height="64" />
         {/* </div> */}
@@ -112,6 +87,7 @@ const Level2 = () => {
             <BsFiles className=" mr-[6px] font-bold mt-[12px] text-gray-600 " />
             <p className="text-sm mt-[12px]">12 exercises</p>
           </div>
+          
         </div>
 
         <div className=" opacity-0 absolute hover:opacity-100 shadow-lg text-right hover:shadow-gray-200 justify-right items-end pt-[7.5%] pl-[90%] duration-300 inset-0 z-10 font-bold  ">
@@ -119,21 +95,13 @@ const Level2 = () => {
             <HiOutlineBookOpen className="sm:w-[26px] ml-[15%] mt-1 items-end text-right text-gray-800 sm:h-[26px]" />
           </div>
         </div>
-        {isShown && (
-          <div className="w-[45px] mt-[-10%] ml-[-30%] h-[45px] p-1 bg-white rounded-full hover:bg-gray-200 text-center justify-between items-center border-[0.1px] border-gray-200 ">
-            <HiOutlineBookOpen className="sm:w-[26px] ml-[15%] mt-1 items-end text-right text-gray-800 sm:h-[26px]" />
-          </div>
-        )}
+        <div className=" ml-5 pt-[3%] ">
+          <HiCheckCircle className="sm:w-[26px] text-gray-300 sm:h-[26px]" />
+        </div>
       </div>
 
       {/* card 4    */}
-      <div
-        onMouseEnter={() => {
-          setIsShown(false);
-        }}
-        onMouseLeave={() => setIsShown(true)}
-        className="relative mt-[24px] cursor-pointer hover:scale-[101%] hover:shadow-lg hover:shadow-gray-300 ease-in-out duration-300 p-6 rounded-2xl w-auto h-[112px] flex bg-[#ffffff] "
-      >
+      <div className="relative mt-[24px] cursor-pointer hover:scale-[101%] hover:shadow-lg hover:shadow-gray-300 ease-in-out duration-300 p-6 rounded-2xl w-auto h-[112px] flex bg-[#ffffff] ">
         {/* <div className=""> */}
         <img src={img4} alt="/commonDesignerRoles" width={"64"} height="64" />
         {/* </div> */}
@@ -154,21 +122,13 @@ const Level2 = () => {
             <HiOutlineBookOpen className="sm:w-[26px] ml-[15%] mt-1 items-end text-right text-gray-800 sm:h-[26px]" />
           </div>
         </div>
-        {isShown && (
-          <div className="w-[45px] mt-[-10%] ml-[-30%] h-[45px] p-1 bg-white rounded-full hover:bg-gray-200 text-center justify-between items-center border-[0.1px] border-gray-200 ">
-            <HiOutlineBookOpen className="sm:w-[26px] ml-[15%] mt-1 items-end text-right text-gray-800 sm:h-[26px]" />
-          </div>
-        )}
+        <div className=" ml-5 pt-[3%] ">
+          <HiCheckCircle className="sm:w-[26px] text-gray-300 sm:h-[26px]" />
+        </div>
       </div>
 
       {/* card 5   */}
-      <div
-        onMouseEnter={() => {
-          setIsShown(false);
-        }}
-        onMouseLeave={() => setIsShown(true)}
-        className="mt-[24px] cursor-pointer p-6 rounded-2xl w-auto h-[112px] flex border-[1.5px] "
-      >
+      <div className="mt-[24px] cursor-pointer p-6 rounded-2xl w-auto h-[112px] flex border-[1.5px] ">
         {/* <div className=""> */}
         <img src={img5} alt="/level1Test" width={"64"} height="64" />
         {/* </div> */}
@@ -186,12 +146,11 @@ const Level2 = () => {
             <HiOutlineBookOpen className="sm:w-[26px] ml-[15%] mt-1 items-end text-right text-gray-800 sm:h-[26px]" />
           </div>
         </div>
-        {isShown && (
-          <div className="w-[45px] mt-[-10%] ml-[-30%] h-[45px] p-1 bg-white rounded-full hover:bg-gray-200 text-center justify-between items-center border-[0.1px] border-gray-200 ">
-            <HiOutlineBookOpen className="sm:w-[26px] ml-[15%] mt-1 items-end text-right text-gray-800 sm:h-[26px]" />
-          </div>
-        )}
+        <div className=" ml-5 pt-[3%] ">
+          <HiCheckCircle className="sm:w-[26px] text-gray-300 sm:h-[26px]" />
+        </div>
       </div>
+      
     </div>
   );
 };
