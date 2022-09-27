@@ -21,8 +21,8 @@ const CourseDetails = () => {
 
   return (
     <>
-      {/* <div className=" tablet:ml-[178px] ml-0 bg-[#ffffff] fixed overflow-scroll font-inter tablet:rounded-tl-3xl rounded-none tablet:rounded-bl-3xl h-screen"> */}
-      <div className=" bg-[#ffffff] fixed overflow-scroll font-inter tablet:rounded-tl-3xl rounded-none tablet:rounded-bl-3xl h-screen">
+      <div className=" tablet:ml-[178px] ml-0 bg-[#ffffff] fixed overflow-scroll font-inter tablet:rounded-tl-3xl rounded-none tablet:rounded-bl-3xl h-screen">
+      {/* <div className=" bg-[#ffffff] fixed overflow-scroll font-inter tablet:rounded-tl-3xl rounded-none tablet:rounded-bl-3xl h-screen"> */}
 
         <div className=" fixed border-b-[1px] rounded-tl-3xl rounded-none w-[100%] mb-4 z-[100] h-20 items-center bg-[#ffffff]">
           <div className=" fixed flex z-[100px] w-full mt-5 ">
