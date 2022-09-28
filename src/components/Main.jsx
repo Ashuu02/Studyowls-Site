@@ -132,12 +132,13 @@ const Main = () => {
                   <CourseDiv/>
                 </div>
               </div>
+            
             </div>
 
 
         {/* <div className="flex-row p-0 sm:flex"> */}
 
-        <div className="mt-0 py-4 sm:pl-0 max-w-[95%] pl-3 desktop:grid desktop:grid-cols-2 flex-row p-0 sm:flex ">
+        <div className="mt-0 py-4 sm:pl-0 max-w-[95%] sm:max-w-full pl-3 desktop:grid desktop:grid-cols-2 flex-row p-0 sm:flex ">
           {/* col 1 */}
 
           <div className="mt-[80px] w-full tablet:pr-[32px] pt-[16px]">
